@@ -1,16 +1,21 @@
 <?php
+$user = $_POST['user'];
+$comment = $_POST['comment'];
+$timestamp = date("Y-m-d H:i:s");
+$img = rand(0, 10);
+
 $conn = mysql_connect("localhost", "root", "goodyear123!@#");
 if (!$conn)
 {
 	echo "Failed";
+	die("Failed");
 }
 
 mysql_select_db("dwidder", $conn);
 $q = "insert into posts(user, comment, timestamp, img_id)
-values('Ian', 'looks good', '2018-03-10 2:13:00', 1)";
+values('".$user."', '".$comment."', '".$timestamp."', ".$img.")";
 $response = mysql_query($q, $conn);
 
 mysql_close($conn);
-echo "Success";
 
 ?>
