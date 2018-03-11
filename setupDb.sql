@@ -1,3 +1,4 @@
+create database if not exists dwidder;
 use dwidder;
 
 drop table if exists posts;
