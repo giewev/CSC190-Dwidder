@@ -37,7 +37,7 @@ $response = mysql_query($q, $conn);
     				   <div class="row">
         				<div class="col-md-4">
             				<div class="imgAbt">
-               				   <img width="220" height="220" src=/Images'.$row["user"].'png/>
+               				   <img width="75" height="75" src="Images/'.$row["img_id"].'.png">
             				</div>
         				</div>
         				<div class="col-md-8">

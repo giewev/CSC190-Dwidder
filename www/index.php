@@ -26,8 +26,7 @@
 		function verify(){
 			var uname = $("#username").val();
 			var com = $("#comment").val();
-			alert("user:" + uname + 
-				"comment:" + com);
+			
 			    $.post("report.php",
 			    {
 				user: uname,

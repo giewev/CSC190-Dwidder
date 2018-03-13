@@ -2,7 +2,7 @@
 $user = $_POST['user'];
 $comment = $_POST['comment'];
 $timestamp = date("Y-m-d H:i:s");
-$img = rand(0, 10);
+$img = rand(1, 10);
 
 $conn = mysql_connect("localhost", "root", "goodyear123!@#");
 if (!$conn)
